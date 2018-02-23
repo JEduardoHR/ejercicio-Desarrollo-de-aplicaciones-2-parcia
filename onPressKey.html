@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evento onpresskey</title>
+</head>
+<style>
+</style>
+
+<script type="text/javascript">
+	
+	function soloNumeros(e){
+		var key = window.Event ? e.which : e.keyCode;
+		var texto = document.getElementById("txt");
+		texto.innerHTML="key: " + event.which;
+		return (key >= 48 && key <= 57);
+	}
+</script>
+<body>
+<input type="text" id="txtCosto" value="" onkeypress="return soloNumeros(event)" />
+<div id="txt"></div>
+</body>
+</html>
